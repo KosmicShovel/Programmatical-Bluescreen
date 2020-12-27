@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 namespace Programmatical_Bluescreen {
-    class Program
+    internal class Program
     {
         [DllImport("ntdll.dll")]
         public static extern uint RtlAdjustPrivilege(int Privilege, bool bEnablePrivilege, bool IsThreadPrivilege, out bool PreviousValue);
